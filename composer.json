@@ -1,0 +1,6 @@
+{
+    "name": "lepoi/site_e-commerce",
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
