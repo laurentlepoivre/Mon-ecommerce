@@ -30,3 +30,13 @@ function debug($var, $mode = 1)
     }
     echo '</div>';
 }
+// savoir si un interaute est connecte
+function internaute_est_connecte(){
+    if(!isset($_SESSION['membre'])) return false;
+    else return true;
+}
+// savoir si un admin est connecté
+function admin_est_connecte(){
+    if(internaute_est_connecte()&&$_SESSION['membre']['statut']==1) return true;
+    else return false;
+}
